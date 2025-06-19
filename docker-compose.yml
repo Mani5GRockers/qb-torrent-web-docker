@@ -13,7 +13,7 @@ services:
       - ./qbittorrent/config:/config
       - ./downloads:/downloads
     ports:
-      - "6882:8080"   # Web UI
+      - "8080:8080"   # Web UI
       - "6881:6881"   # BitTorrent TCP
       - "6881:6881/udp"
     restart: unless-stopped
